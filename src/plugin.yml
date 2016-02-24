@@ -1,5 +1,9 @@
-﻿name: SmallUtils
-version: 0.1.13.1
+﻿
+
+
+
+name: SmallUtils
+version: 0.1.13
 main: com.Dimmer2222.small.Main
 
 
