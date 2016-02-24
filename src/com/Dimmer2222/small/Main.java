@@ -17,7 +17,6 @@ public final class Main extends JavaPlugin {
 			new MainCommand(this).checkforUpdate();
 			new ClearChat(this);
 			new JoinEffectsCommand(this);
-			new SupportCommand(this);
 		}
 		else this.getServer().getPluginManager().registerEvents(new TestEvent(), this);
 

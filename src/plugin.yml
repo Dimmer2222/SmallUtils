@@ -41,20 +41,20 @@ commands:
     usage: /clearChat (zielSpieler)
     permission: SmallUtils.clearChat
 
-   Support:
-    description: Löscht deinen Chat oder von Mitspielern.
-    usage: /clearChat (zielSpieler)
-    permission: SmallUtils.Support
+   #Support:
+    #description: Löscht deinen Chat oder von Mitspielern.
+    #usage: /clearChat (zielSpieler)
+    #permission: SmallUtils.Support
 
-   delSupport:
-    description: Löscht deinen Chat oder von Mitspielern.
-    usage: /clearChat (zielSpieler)
-    permission: SmallUtils.Support
+  #delSupport:
+    #description: Löscht deinen Chat oder von Mitspielern.
+    #usage: /clearChat (zielSpieler)
+    #permission: SmallUtils.Support
 
-   leaveSupport:
-    description: Löscht deinen Chat oder von Mitspielern.
-    usage: /clearChat (zielSpieler)
-    permission: SmallUtils.Support
+   #leaveSupport:
+    #description: Löscht deinen Chat oder von Mitspielern.
+    #usage: /clearChat (zielSpieler)
+    #permission: SmallUtils.Support
 
 
 
