@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+tasks.compileJava.dependsOn(':DAPI:build')
+
+ext{
+
+	bukkitVersion = '1.8.8-R0.1-SNAPSHOT'
+	DAPIVersion = '0.1.14'
+
+}
+
+dependencies{
+ compile "org.bukkit:bukkit:$bukkitVersion", project(':DAPI') ,"com.Dimmer2222:DAPI:$DAPIVersion"
+}
+
+repositories{
+mavenCentral()
+maven{
+	url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+}
+	flatDir { dirs "DAPI/build/repo" }
+}
+
+
+
+
+
+
