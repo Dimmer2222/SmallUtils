@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
-tasks.compileJava.dependsOn(':DAPI:build')
+tasks.compileJava.dependsOn(':DAPI:uploadArchives')
 
 ext{
 
