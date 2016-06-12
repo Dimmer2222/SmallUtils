@@ -12,7 +12,7 @@ ext{
 }
 
 dependencies{
- compile "org.bukkit:bukkit:$bukkitVersion", "com.Dimmer2222:DAPI:$DLIBVersion"
+ compile "org.bukkit:bukkit:$bukkitVersion", "com.Dimmer2222:DAPI:$DAPIVersion"
 }
 
 repositories{
