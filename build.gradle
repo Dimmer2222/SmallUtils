@@ -7,12 +7,12 @@ tasks.compileJava.dependsOn(':DAPI:build')
 ext{
 
 	bukkitVersion = '1.8.8-R0.1-SNAPSHOT'
-	DLIBVersion = '0.1.99'
+	DAPIVersion = '0.1.14'
 
 }
 
 dependencies{
- compile "org.bukkit:bukkit:$bukkitVersion", "com.Dimmer2222:DLIB:$DLIBVersion"
+ compile "org.bukkit:bukkit:$bukkitVersion", "com.Dimmer2222:DAPI:$DLIBVersion"
 }
 
 repositories{
