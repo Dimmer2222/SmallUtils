@@ -33,16 +33,21 @@ SOFTWARE.
 
 public final class Main extends JavaPlugin {
 
+	static SmallUtils instance;
+	public static Main MainInstance;
+
 	@Override
 	public void onEnable() {
 		super.onEnable();
 		config();
 		if(testDAPI()) {
+			instance = new SmallUtils();
 			new WartungenCommand(this);
 			new WarpCommand(this);
 			new MainCommand(this).checkforUpdate();
 			new ClearChat(this);
 			new JoinEffectsCommand(this);
+			//new RegionCommand(this);
 		}
 		else this.getServer().getPluginManager().registerEvents(new TestEvent(), this);
 

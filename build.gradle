@@ -2,12 +2,14 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
-tasks.compileJava.dependsOn(':DAPI:uploadArchives')
+tasks.compileJava.dependsOn(':DAPI:build')
+
+version = '0.1.15'
 
 ext{
 
 	bukkitVersion = '1.8.8-R0.1-SNAPSHOT'
-	DAPIVersion = '0.1.14'
+	DAPIVersion = '0.2'
 
 }
 

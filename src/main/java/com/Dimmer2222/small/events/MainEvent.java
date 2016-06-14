@@ -41,7 +41,7 @@ public class MainEvent implements Listener{
 
     /*
 
-    Dieser Konstruktor ist für
+    This constructor is to register the event.
 
      */
 

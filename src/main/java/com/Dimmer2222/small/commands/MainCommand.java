@@ -112,7 +112,7 @@ public final class MainCommand extends MainEvent implements CommandExecutor {
 
             if(args.length == 1 && args[0].equalsIgnoreCase("version")){
                 sender.sendMessage(ChatColor.AQUA + "Die Version von SmallUtils betraegt: " + js.getDescription().getVersion());
-                sender.sendMessage(ChatColor.AQUA + "©Dimmer2222 2016, All Rights reserved.");
+                sender.sendMessage(ChatColor.AQUA + "©Dimmer2222 2016, Licensed under the MIT License.");
                 if(super.isNewerVersionAvailable){
                     p.sendMessage(ChatColor.AQUA + "Es ist die neuere Version " + temp + " verfügbar.");
                 }

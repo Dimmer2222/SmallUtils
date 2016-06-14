@@ -65,6 +65,19 @@ commands:
     usage: /clearChat (zielSpieler)
     permission: SmallUtils.clearChat
 
+   region:
+    description: bla
+    usage: /region
+
+   pos1:
+    description: bla
+    usage: /pos1
+
+   pos2:
+    description: bla
+    usage: /pos2
+
+
    #Support:
     #description: Löscht deinen Chat oder von Mitspielern.
     #usage: /clearChat (zielSpieler)
