@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: com.Dimmer2222:DAPI:0.2-devBuild12">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/DAPI/build/repo/DAPI-0.2-devBuild12.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
