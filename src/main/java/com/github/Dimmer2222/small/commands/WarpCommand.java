@@ -1,15 +1,15 @@
-package com.Dimmer2222.small.commands;
+package com.github.Dimmer2222.small.commands;
 
-import com.Dimmer2222.DAPI.api.BukkitEasier;
-import com.Dimmer2222.DAPI.exceptions.CoreException;
+import com.github.Dimmer2222.DLIB.api.BukkitEasier;
+import com.github.Dimmer2222.DLIB.exceptions.CoreException;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.Dimmer2222.small.Main;
-import com.Dimmer2222.DAPI.api.WarpManager;
+import com.github.Dimmer2222.small.Main;
+import com.github.Dimmer2222.DLIB.api.WarpManager;
 
 /*
 

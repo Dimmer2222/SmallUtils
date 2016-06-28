@@ -1,7 +1,7 @@
-package com.Dimmer2222.small;
+package com.github.Dimmer2222.small;
 
-import com.Dimmer2222.small.commands.*;
-import com.Dimmer2222.small.events.TestEvent;
+import com.github.Dimmer2222.small.commands.*;
+import com.github.Dimmer2222.small.events.TestEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /*
@@ -33,21 +33,17 @@ SOFTWARE.
 
 public final class Main extends JavaPlugin {
 
-	static SmallUtils instance;
-	public static Main MainInstance;
 
 	@Override
 	public void onEnable() {
 		super.onEnable();
 		config();
 		if(testDAPI()) {
-			instance = new SmallUtils();
 			new WartungenCommand(this);
 			new WarpCommand(this);
 			new MainCommand(this).checkforUpdate();
 			new ClearChat(this);
 			new JoinEffectsCommand(this);
-			//new RegionCommand(this);
 		}
 		else this.getServer().getPluginManager().registerEvents(new TestEvent(), this);
 

@@ -1,7 +1,7 @@
-package com.Dimmer2222.small.commands;
+package com.github.Dimmer2222.small.commands;
 
-import com.Dimmer2222.DAPI.api.BukkitEasier;
-import com.Dimmer2222.small.events.JoinEffectsEvent;
+import com.github.Dimmer2222.DLIB.api.BukkitEasier;
+import com.github.Dimmer2222.small.events.JoinEffectsEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

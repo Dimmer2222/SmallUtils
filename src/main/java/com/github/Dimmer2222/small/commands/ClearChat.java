@@ -1,8 +1,8 @@
-package com.Dimmer2222.small.commands;
+package com.github.Dimmer2222.small.commands;
 
-import com.Dimmer2222.small.Main;
-import com.Dimmer2222.DAPI.api.BukkitEasier;
-import com.Dimmer2222.DAPI.api.PlayerManager;
+import com.github.Dimmer2222.small.Main;
+import com.github.Dimmer2222.DLIB.api.BukkitEasier;
+import com.github.Dimmer2222.DLIB.api.PlayerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

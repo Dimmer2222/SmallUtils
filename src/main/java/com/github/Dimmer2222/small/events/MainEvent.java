@@ -1,12 +1,10 @@
-package com.Dimmer2222.small.events;
+package com.github.Dimmer2222.small.events;
 
-import com.Dimmer2222.DAPI.api.BukkitEasier;
+import com.github.Dimmer2222.DLIB.api.BukkitEasier;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /*
@@ -35,34 +33,29 @@ SOFTWARE.
 
  */
 
-public class WartungenEvent implements Listener {
+public class MainEvent implements Listener{
 
-        JavaPlugin js;
+    private JavaPlugin js;
+    protected String temp = "";
+    protected boolean isNewerVersionAvailable = false;
 
-        public WartungenEvent(JavaPlugin js){
-            BukkitEasier.registerEvents(js, this);
-            this.js = js;
-        }
+    /*
 
-        @EventHandler(priority = EventPriority.HIGHEST)
-        public void OnJoin(PlayerJoinEvent e){
-            if(js.getConfig().getBoolean("SmallUtils.Events.Wartungen.An/Aus")) {
-                if (!e.getPlayer().hasPermission("SmallUtils.Wartungen.join")) {
-                    e.getPlayer().kickPlayer(ChatColor.DARK_RED + "Wartungen");
-                    e.setJoinMessage("");
-                }
-            }
-        }
+    This constructor is to register the event.
 
-        @EventHandler(priority = EventPriority.HIGHEST)
-        public void onLeave(PlayerQuitEvent e){
-            if(js.getConfig().getBoolean("SmallUtils.Events.Wartungen.An/Aus")) {
-                if (!e.getPlayer().hasPermission("SmallUtils.Wartungen.join")) {
-                    e.setQuitMessage("");
-                }
-            }
+     */
 
-        }
-
+    public MainEvent(JavaPlugin js){
+        BukkitEasier.registerEvents(js, this);
+        this.js = js;
     }
 
+    @EventHandler
+    public void onJoin(PlayerJoinEvent e){
+        if(isNewerVersionAvailable){
+            if(e.getPlayer().hasPermission("SmallUtils.Update"))
+            e.getPlayer().sendMessage(ChatColor.AQUA + "Die neue Version " + temp + " ist verfügbar Sie besitzen die Version " + js.getDescription().getVersion() + " . Link: https://www.mediafire.com/folder/3mke72rf34mz4/SmallUtils.");
+        }
+    }
+
+}
