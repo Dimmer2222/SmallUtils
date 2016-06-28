@@ -9,7 +9,7 @@ version = '0.1.14'
 ext{
 
 	bukkitVersion = '1.8.8-R0.1-SNAPSHOT'
-	DAPIVersion = '0.2'
+	DAPIVersion = '0.1.14'
 
 }
 
