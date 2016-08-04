@@ -24,7 +24,7 @@
 
 name: SmallUtils
 version: 0.1.14.1
-main: com.Dimmer2222.small.Main
+main: com.github.Dimmer2222.small.Main
 
 
 commands:
